@@ -53,9 +53,12 @@ function imgAutoActive(){
   if (index>imgNumer.length-1) {
     index=0
   }
-  console.log(index)
+  // console.log(index)
+  removeClassActive()
   document.querySelector(".slider_content_left_top").style.right =
       index * 100 + "%";
+    imgNumerLi[index].classList.add("active");
+
 }
 setInterval(imgAutoActive,3000)
 
