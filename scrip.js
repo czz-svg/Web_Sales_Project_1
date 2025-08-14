@@ -37,7 +37,7 @@ lefttbtn.addEventListener("click", function () {
 const imgNumerLi = document.querySelectorAll(".slider_content_left_bottom li");
 imgNumerLi.forEach(function (image, index) {
   image.addEventListener("click", function () {
-    removeClassActive()
+    removeClassActive();
     document.querySelector(".slider_content_left_top").style.right =
       index * 100 + "%";
     image.classList.add("active");
@@ -48,17 +48,15 @@ function removeClassActive() {
   imgActive.classList.remove("active");
 }
 //--------------- slider auto active---------------------------------------------------------
-function imgAutoActive(){
-  index++
-  if (index>imgNumer.length-1) {
-    index=0
+function imgAutoActive() {
+  index++;
+  if (index > imgNumer.length - 1) {
+    index = 0;
   }
   // console.log(index)
-  removeClassActive()
+  removeClassActive();
   document.querySelector(".slider_content_left_top").style.right =
-      index * 100 + "%";
-    imgNumerLi[index].classList.add("active");
-
+    index * 100 + "%";
+  imgNumerLi[index].classList.add("active");
 }
-setInterval(imgAutoActive,3000)
-
+setInterval(imgAutoActive, 3000);

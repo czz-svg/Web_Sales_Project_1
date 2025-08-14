@@ -332,7 +332,7 @@ li {
 .slider_content_left_top a:nth-child(3) img {
   transform: translateX(200%);
 }
-.slider_content_left_container{
+.slider_content_left_container {
   position: relative;
   overflow: hidden;
 }
