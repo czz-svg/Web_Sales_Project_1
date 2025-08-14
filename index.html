@@ -11,12 +11,13 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Thế Giới Nước</title>
+    <title>CLOTHING WORLD</title>
   </head>
   <body>
     <header>
-      <h1>WELCOME VIET WATER</h1>
+      <h1>--- WELCOME VIET CLOTHING ---</h1>
     </header>
+    <!-------------------- nav --------------------->
     <nav>
       <div class="container">
         <ul>
@@ -29,9 +30,9 @@
             /></a>
           </li>
           <li id="address_form">
-            <a href="#">HCM<i class="fa-solid fa-sort-down"></i></a>
+            <a href="#address">HCM<i class="fa-solid fa-sort-down"></i></a>
           </li>
-          
+
           <li>
             <input type="text" placeholder="Search..." /><i
               class="fa-solid fa-magnifying-glass"
@@ -46,6 +47,7 @@
         </ul>
       </div>
     </nav>
+    <!-------------------- section menu_bar --------------------->
     <section class="menu_bar">
       <div class="container">
         <div class="menu_bar_container">
@@ -58,35 +60,92 @@
             </li>
             <li>
               <a href=""
-                ><i class="fa-solid fa-sort-down"></i>Fashion accessories<i class="fa-solid fa-glasses"></i
+                ><i class="fa-solid fa-sort-down"></i>Fashion accessories<i
+                  class="fa-solid fa-glasses"
+                ></i
               ></a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="">glasses</a></li>
+                  <li><a href="">ring</a></li>
+                  <li><a href="">bracelet</a></li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="">Hat<i class="fa-solid fa-hat-wizard"></i></a>
             </li>
             <div class="address_form">
-                <div class="address_form_content">
-                    <h2>Address <span id="address_close"><i style="color:  rgb(126, 126, 126);" class="fa-solid fa-circle-xmark"></i> Close</span></h2>
-                    <form action="">
-                        <p>Fill in the shipping address information.</p>
-                        <select name="" id="">
-                            <option value="">--Chọn địa điểm</option>
-                            <option value="">HCM</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">--Chọn Quận/Huyện</option>
-                            <option value="">HCM</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">--Chọn Phường/Xã</option>
-                            <option value="">HCM</option>
-                        </select>
-                        <input type="text" placeholder="địa chỉ cụ thể">
-                        <button>Xác nhận</button>
-                    </form>
-                </div>
+              <div class="address_form_content">
+                <h2>
+                  Address
+                  <span id="address_close"
+                    ><i
+                      style="color: rgb(126, 126, 126)"
+                      class="fa-solid fa-circle-xmark"
+                    ></i>
+                    Close</span
+                  >
+                </h2>
+                <form action="">
+                  <p>Fill in the shipping address information.</p>
+                  <select name="" id="">
+                    <option value="">--Chọn địa điểm</option>
+                    <option value="">HCM</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">--Chọn Quận/Huyện</option>
+                    <option value="">HCM</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">--Chọn Phường/Xã</option>
+                    <option value="">HCM</option>
+                  </select>
+                  <input type="text" placeholder="địa chỉ cụ thể" />
+                  <button>Xác nhận</button>
+                </form>
+              </div>
             </div>
           </ul>
+        </div>
+      </div>
+    </section>
+    <!-------------------- section slider --------------------->
+    <section class="slider">
+      <div class="container">
+        <div class="slider_content">
+          <div class="slider_content_left">
+            <div class="slider_content_left_container">
+              <div class="slider_content_left_top">
+                <a href=""><img src="./img/slide1.jpg" alt="" /></a>
+                <a href=""><img src="./img/slide2.jpg" alt="" /></a>
+                <a href=""><img src="./img/slide3.jpg" alt="" /></a>
+              </div>
+              <div class="slider_content_left_top_btn">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="slider_content_left_bottom">
+              <li class="active">title 1</li>
+              <li>title 2</li>
+              <li>title 3</li>
+            </div>
+          </div>
+          <div class="slider_content_right">
+            <li>
+              <a href=""> <img src="./img/img1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/img2.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""> <img src="./img/img3.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""> <img src="./img/img4.png" alt="" /></a>
+            </li>
+          </div>
         </div>
       </div>
     </section>
