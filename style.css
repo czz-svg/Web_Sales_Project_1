@@ -38,7 +38,7 @@ a {
 nav ul li:nth-child(2) a {
   color: aqua;
 }
-nav ul li:nth-child(2) i {
+nav ul li:nth-child(2) i:nth-child(1) {
   color: aqua;
   font-size: 15px;
 }
@@ -103,9 +103,7 @@ nav ul li:nth-child(6):hover a {
 }
 .menu_bar ul {
   display: flex;
-  justify-content:center;
-
-        
+  justify-content: center;
 }
 .menu_bar ul li a {
   color: black;
@@ -123,40 +121,78 @@ nav ul li:nth-child(6):hover a {
 }
 .menu_bar ul li:hover {
   background-color: white;
-  
 }
-.menu_bar ul li:nth-child(4){
-    position: relative;
+.menu_bar ul li:nth-child(4) {
+  position: relative;
 }
-.menu_bar ul li:nth-child(4)::before{
-    position: absolute;
-    content: "giảm 50%";
-    display: block;
-    height: 25px;
-    width: 40px;
-    background-color: red ;
-    border-radius: 10px;
-    right:30%;
-    top: 0; 
-    font-size: 10px;
-    padding-left: 5px;
-    padding-top: 2px;
+.menu_bar ul li:nth-child(4)::before {
+  position: absolute;
+  content: "giảm 50%";
+  display: block;
+  height: 25px;
+  width: 40px;
+  background-color: red;
+  border-radius: 10px;
+  right: 30%;
+  top: 0;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-top: 2px;
 }
 /*---------------------------- address form---------------------------------------------*/
-.address_form{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0,0.5);
-    top:0;
-    left:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.address_form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: none;
 }
-.address_form_content{
-    width: 400px;
-    height: 500px;
-    background-color: white;
+.address_form_content {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  border-radius: 5px;
+}
+.address_form_content form {
+  padding: 0 40px;
+}
+.address_form_content h2 {
+  font-size: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: relative;
+}
+.address_form_content h2 span {
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid rgb(131, 131, 131);
+  right: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 27px;
+  color: rgb(126, 126, 126);
+  border-radius: 5px;
+}
+.address_form_content form input,select {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+.address_form_content form button{
+    width: 200px;
+    background-color:aqua;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
 }

@@ -28,33 +28,10 @@
                 alt="logo"
             /></a>
           </li>
-          <li>
-            <a href="">Address<i class="fa-solid fa-sort-down"></i></a>
-            <div class="address_form">
-                <div class="address_form_content">
-                    <h2>Address</h2>
-                    <form action="">
-                        <p>Fill in the shipping address information.</p>
-                        <select name="" id="">
-                            <option value="">--Chọn địa điểm</option>
-                            <option value="">HCM</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">--Chọn Quận/Huyện</option>
-                            <option value="">HCM</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">--Chọn Phường/Xã</option>
-                            <option value="">HCM</option>
-                        </select>
-                        <input type="text" placeholder="địa chỉ cụ thể">
-                        <button>Xác nhận</button>
-                    </form>
-                </div>
-
-            </div>
-
+          <li id="address_form">
+            <a href="#">HCM<i class="fa-solid fa-sort-down"></i></a>
           </li>
+          
           <li>
             <input type="text" placeholder="Search..." /><i
               class="fa-solid fa-magnifying-glass"
@@ -87,9 +64,32 @@
             <li>
               <a href="">Hat<i class="fa-solid fa-hat-wizard"></i></a>
             </li>
+            <div class="address_form">
+                <div class="address_form_content">
+                    <h2>Address <span id="address_close"><i style="color:  rgb(126, 126, 126);" class="fa-solid fa-circle-xmark"></i> Close</span></h2>
+                    <form action="">
+                        <p>Fill in the shipping address information.</p>
+                        <select name="" id="">
+                            <option value="">--Chọn địa điểm</option>
+                            <option value="">HCM</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">--Chọn Quận/Huyện</option>
+                            <option value="">HCM</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">--Chọn Phường/Xã</option>
+                            <option value="">HCM</option>
+                        </select>
+                        <input type="text" placeholder="địa chỉ cụ thể">
+                        <button>Xác nhận</button>
+                    </form>
+                </div>
+            </div>
           </ul>
         </div>
       </div>
     </section>
   </body>
+  <script src="./scrip.js"></script>
 </html>
